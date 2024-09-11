@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+
+      body {
+        background-color: rgba(255, 199, 17, 0.918);
+      }
+
+      .card {
+        width: 300px; /* Adjusted width to be more reasonable */
+        /* height: 500px; */
+        margin: 300px auto; /* Center the card horizontally */
+        border-radius: 20px;
+        background-color: white;
+        padding: 20px; /* Added padding for spacing inside the card */
+        box-shadow: 5px 5px 1px 3px rgba(0, 0, 0, 0.8); /* Optional: for a subtle shadow effect */
+      }
+
+      .button {
+        background-color: rgba(255, 199, 17, 0.918);
+        height: 30px;
+        border-radius: 5px;
+        font-weight: 900;
+        border: none;
+        width: 21%;
+        /* margin: 250px 100px 10px 10px; */
+      }
+
+      span {
+        font-family: tahoma;
+        display: block;
+        padding-top: 5px;
+        font-size: 13px;
+        font-family: "SUSE", sans-serif;
+        text-align: inline;
+      }
+      h3 {
+        text-align: justify;
+        padding: 7px 5px 0px 0px;
+        color: rgba(255, 199, 17, 0.918);
+        margin: 0;
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: tahoma;
+      }
+      h4 {
+        direction: ltr;
+        font-weight: lighter;
+        text-align: justify;
+        font-size: 15px;
+        font-family: tahoma;
+        padding: 4px 3px 0px 0px;
+        color: rgba(211, 211, 211, 2);
+        line-height: 1.5;
+        margin-top: 0px;
+      }
+      .profile {
+        display: flex;
+        align-items: center;
+      }
+
+      .profile img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .profile p {
+        margin: 0;
+        font-size: 16px;
+        font-family: "SUSE", sans-serif;
+        font-weight: bold;
+      }
+      #illustration-article {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 600px) {
+        .card {
+          width: 90%;
+          margin: 50px;
+          padding: 15px;
+        }
+        .button {
+          width: 100%;
+          height: 40px;
+          font-size: 16px;
+        }
+        h3 {
+          font-size: 18px;
+        }
+        h4 {
+          font-size: 14px;
+        }
+        .profile img {
+          width: 40px;
+          height: 40px;
+        }
+
+        .profile p {
+          font-size: 14px;
+        }
+
+        #illustration-article {
+          height: 150px;
+        }
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="screen">
+        <img
+          id="illustration-article"
+          src="assets/images/illustration-article.svg"
+          alt=""
+        />
+      </div>
+      <button class="button">Learning</button>
+      <span>Published 11 Sept 2024</span>
+      <article>
+        <h3>HTML &amp; CSS foundations</h3>
+        <h4>
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </h4>
+      </article>
+      <div class="profile">
+        <img src="assets/images/image-avatar.webp" alt="image" />
+        <p>Greg Hopper</p>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Divine Basusi</a>.
+    </div>
+  </body>
+</html>
